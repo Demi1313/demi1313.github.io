@@ -1,0 +1,354 @@
+@media(max-width: 1200px)
+	.menu
+		&_item
+			padding-right: 20px
+		&_link
+			font-size: 13px
+	.promo
+		&_header
+			font-size: 50px
+	.advantages
+		&_descr
+			width: 250px
+			height: 220px
+	.mobile
+		&_item
+			width: 300px
+	.footer
+		&_mobile
+			a
+				display: inline-flex
+				justify-content: space-around
+				margin-left: -20px
+				img
+					width: 80%
+@media(max-width: 991px)
+	.menu
+		&_item
+			padding-right: 10px
+		&_link
+			font-size: 10px
+	.subheader
+		img
+			width: 100%
+		&_official
+			width: 250px
+		&_phone
+			font-size: 20px
+		&_btn
+			width: 100%
+	.promo
+		&_header
+			font-size: 40px
+		&_subheader
+			font-size: 30px
+	.advantages
+		&_item
+			flex-direction: column
+			align-items: center
+			.advantages_round
+				margin-bottom: 20px
+			.advantages_descr
+				width: 330px
+				height: 160px   
+	.mobile
+		&_item
+			width: 220px
+			margin-top: 21px
+			height: 220px
+		&_subtitle
+			font-size: 17px
+	.selection
+		.uber_car
+			margin-top: 80px
+			width: 650px
+	.footer
+		&_wrapper
+			flex-wrap: wrap
+		&_wrapper > div 
+			width: 100%
+			display: flex 
+			justify-content: center
+			margin-bottom: 20px
+			&:nth-child(1)
+				width: 100%
+			&:nth-child(3)
+				width: 100%
+				justify-content: center
+		
+@media(max-width: 767px)
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0, 0, 0, 0.8)
+		transition: 0.6s all
+		&_active
+			left: 0
+		&_item
+			border: none
+			padding-right: 0
+			margin: 10px 0
+		&_link
+			font-size: 20px
+	.selection
+		.uber_car
+			margin-top: 53px
+			width: 500px
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 12px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #fff
+			margin-bottom: 2px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block
+	.subheader
+		&_phone
+			display: block
+			margin-top: 10px
+			font-size: 16px
+			font-weight: 400
+			color: #ffffff
+			text-transform: uppercase
+			text-align: center
+		&_btn
+			width: 200px
+			height: 40px
+			margin: 0 auto
+			display: block
+			margin-top: 10px
+	.promo
+		&_header
+			line-height: 45px
+	.advantages
+		&_wrapper
+			align-content: center
+			.advantages_descr
+					width: 292px
+					height: 162px  
+			.advantages_round
+				margin-top: 23px		
+	.footer
+		&_wrapper > div
+			.footer_social
+					justify-content: flex-end
+					margin-bottom: 25px
+			&:nth-child(3)
+					margin-bottom: 20px
+					a
+						margin-left: -19px
+					
+	.world
+		.world_bg
+			.center_subtitle
+				margin-top: 530px
+	.mobile
+		&_item
+			&_subtitle
+				font-size: 18px					
+@media(max-width: 575px)
+	nav
+		height: 30px
+	header
+		height: 30px	
+	.subheader
+		height: 62px
+		top: 30px
+		&_official	
+			display: none
+		&_logo
+			margin-top: 18px
+		&_phone	
+			font-weight: 400
+			font-size: 12px
+			text-transform: uppercase
+			margin-top: 11px
+		&_btn
+			width: 110px
+			height: 22px
+			font-size: 9px
+			margin-top: 6px
+			&:hover
+				background-image: linear-gradient(to top, $text_color 0%, #4ce2ff 100%)
+	.promo
+		min-height: 400px
+		padding: 73px 0 35px 0
+		&_descr
+			display: none
+		&_header
+			font-size: 30px
+			padding: 0 24px
+			line-height: 35px
+		&_subheader
+			font-size: 20px
+			margin-top: 33px
+			padding: 0 10px
+			line-height: 30px
+		&_btn
+			width: 210px
+			height: 50px
+			margin-top: 72px
+			font-size: 16px
+			&:hover
+				background-image: linear-gradient(to top, $text_color 0%, #4ce2ff 100%)
+	.menu
+		width: 85%
+		&_item
+			width: 100%
+			text-align: center
+			padding: 5px 0
+		&_link
+			display: block
+	.advantages
+		padding: 22px 0 36px 0
+		.row
+			.second_col
+				.advantages_wrapper
+					.advantages_item:last-Child
+						.advantages_descr:last-Child
+							height: 82px
+			.advantages_item
+				margin-top: 24px
+			.advantages_item:first-Child
+				margin-top: 0
+			.advantages_item:last-Child
+				margin-top: 48px
+				.advantages_descr
+					margin-left: 10px
+				.advantages_round
+					width: 103px
+					height: 103px
+				.advantages_round:first-Child
+					margin-top: 0
+	.center_header
+		font-size: 16px
+		margin-top: 15px
+		line-height: 16px
+	.center_subheader
+		margin-top: 9px
+	.mobile
+		padding-bottom: 32px
+		.row
+			margin-top: 0
+		&_item
+			width: 290px
+			margin-top: 21px
+			height: 254px
+			padding: 80px 0 21px 0
+	.selection
+		min-height: 393px
+		padding: 26px 0 14px 0
+		.uber_car
+			display: none
+		.uber_car_1
+			display: block
+			width: 300px
+			height: 190px
+			background-blend-mode: screen
+			mix-blend-mode: normal
+			margin: 0 auto
+			margin-top: 57px
+		.center_header
+			display: none
+		.center_subheader
+			display: none
+		.center_descr
+			font-size: 17px
+			color: #ffffff
+			margin: 0
+	.conditions
+		&_list
+			li
+				font-size: 14px
+				line-height: 16px
+				margin-bottom: 5px
+				&:before
+					left: -35px
+					top: -3px
+	.world
+		min-height: 360px
+		&_bg
+			min-height: 100%
+			.center_subheader
+				font-size: 14px
+				line-height: 21px
+			.center_subtitle
+				display: block
+				margin-top: 210px	
+				a
+					font-size: 15px
+					line-height: 15px	
+	footer
+		min-height: 254px
+		padding: 25px 0 20px 0
+	.footer
+		&_divider
+			background: $text_color
+			width: 255px
+			height: 6px
+		&_wrapper
+			width: 100%
+			padding-top: 21px
+		&_wrapper > div
+			width: 100%
+			margin-bottom: 20px
+			&:nth-child(1)
+				order: 2
+			&:nth-child(2)
+				order: 1
+			&:nth-child(3)
+				order: 3
+			.footer_links 
+				width: 290px
+				&_main 
+					padding: 0
+					font-size: 14px
+					a
+						text-decoration: none
+				&_sub 
+					flex-wrap: wrap
+					justify-content: center
+					a 
+						margin: 0 7px
+						text-decoration: none
+				&_lang 
+					margin-top: 10px
+					a
+						text-decoration: none
+			.footer_mobile
+				margin-right: 0
+					
+
+
+
+					
+		   
+
+
